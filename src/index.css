@@ -17,11 +17,12 @@ code {
     monospace;
 }
 #root{
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: #202430;
 }
-.dashboard{
+.dashboard, .browse{
   margin-left: 17px;
   margin-right: 17px;
 }
