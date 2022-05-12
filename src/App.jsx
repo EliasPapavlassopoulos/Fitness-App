@@ -2,11 +2,10 @@ import { Routes } from "react-router";
 import { Route } from "react-router-dom";
 // import pages
 import Dashboard from "./pages/Dashboard";
-import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <Routes>
         <Route path="/" element={<Dashboard />} />
       </Routes>

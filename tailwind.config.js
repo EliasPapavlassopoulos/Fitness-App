@@ -34,6 +34,9 @@ module.exports = {
         s: "30px",
         m: "50px"
       },
+      fontFamily: {
+        poppins: "Poppins"
+      },
     },
   },
   plugins: [],
