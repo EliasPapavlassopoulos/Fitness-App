@@ -5,14 +5,17 @@ function Dashboard() {
     return (
         <div className="dashboard">
             <header>
-                <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold pt-10">Hi {userName}!</h1>
+                <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold pt-[41px]">Hi {userName}!</h1>
             </header>
-            <div className="flex justify-center pt-6">
+            <div className="flex justify-center pt-[23px]">
                 <img src="../images/dashboard1.svg" />
             </div>
             <div className="relative">
-                <h1 className="text-highlighted-textcolor text-h2 font-poppins font-bold mt-10">Dein Workout heute</h1>
-                <button className="text-highlighted-textcolor text-sm font-normal font-poppins absolute top-4 right-1">Trainingsplan</button>
+                <h1 className="text-highlighted-textcolor text-h2 font-poppins font-bold mt-[40.04px]">Dein Workout heute</h1>
+                <button className="text-highlighted-textcolor text-sm font-normal font-poppins absolute top-[15px] right-[22px]">Trainingsplan</button>
+            </div>
+            <div className="bg-backgroundLight h-[13.75rem] flex flex-col justify-end p-7 rounded-s mt-[11px] drop-shadow-lg">
+                <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-textcolor text-ft font-bold font-poppins">Keine aktiven Workouts! <br /> <button className="absolute left-[50%] translate-x-[-50%] font-normal">Browse</button></p>
             </div>
         </div>
     );
