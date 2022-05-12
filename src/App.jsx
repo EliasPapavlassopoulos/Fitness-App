@@ -1,10 +1,16 @@
+import { Routes } from "react-router";
+import { Route } from "react-router-dom";
+// import pages
+import Dashboard from "./pages/Dashboard";
 import "./App.css";
 
 function App() {
   return (
-    <div className="container">
+    <div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
-
 export default App;
