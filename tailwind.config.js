@@ -37,6 +37,9 @@ module.exports = {
       fontFamily: {
         poppins: "Poppins"
       },
+      dropShadow: {
+        'button': '0px 3px 10px rgba(0, 0, 0, 0.35)',
+      },
     },
   },
   plugins: [],
