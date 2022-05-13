@@ -1,4 +1,4 @@
-let Workouts = ['Workout 1', 'Workout 2', 'Workout 3', 'Workout 4', 'Workout 5'];
+let Workouts = ['Titel des Programms', '100 Push-Ups Challenge', 'Titel des Programms', 'Stretch and Relax', 'Titel des Programms'];
 let WorkoutComponentPackage = [];
 Workouts.forEach((data, WorkoutID) => {
     if (WorkoutID %3 == 0) {

@@ -10,7 +10,7 @@ function Dashboard() {
                 <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold pt-[41px]">Hi {userName}!</h1>
             </header>
             <div className="flex justify-center pt-[23px]">
-                <img src="../images/dashboard1.svg" />
+                <img src="../images/dashboard-title.svg" />
             </div>
             <div className="relative">
                 <h2 className="text-highlighted-textcolor text-h2 font-poppins font-bold mt-[40.04px]">Dein Workout heute</h2>
