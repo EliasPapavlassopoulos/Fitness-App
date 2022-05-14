@@ -26,7 +26,35 @@ export default function WorkoutInformation() {
                 </p>
                 <NavLink to="/workout/[id]"><button className="fixed left-[50%] bottom-[55px] z-10 translate-x-[-50%] rounded-s drop-shadow-button bg-gradient-to-tl from-gradient1-color1 to-gradient1-color2 pl-[25px] pr-[25px] text-background text-ft h-[45px]">jetzt starten</button></NavLink>
             </div>
-            <div className="h-[60px]"></div>
+            <h3 className="text-highlighted-textcolor text-h3 font-poppins font-bold mt-[28px] ml-[24px]">So ist das Programm aufgeteilt:</h3>
+            <div className="ml-[24px] mr-[24px] mt-[37px] flex justify-around">
+                <div className="rounded-[50%] bg-backgroundLight h-[160px] w-[160px]"></div>
+                <div className=" relative w-[150px]">
+                    <div className="relative top-[50%] translate-y-[-50%]">
+                        <div className="flex">
+                            <div className="bg-backgroundLight rounded-[50%] h-[14px] w-[14px]"></div>
+                            <p className="text-center text-sm mb-[19px] text-highlighted-textcolor leading-[14px] ml-[12px] font-poppins">Krafttraining</p>
+                        </div>
+                        <div className="flex">
+                            <div className="bg-backgroundLight rounded-[50%] h-[14px] w-[14px]"></div>
+                            <p className="text-center text-sm mb-[19px]  text-highlighted-textcolor leading-[14px] ml-[12px] font-poppins">Koordination</p>
+                        </div>
+                        <div className="flex">
+                            <div className="bg-backgroundLight rounded-[50%] h-[14px] w-[14px]"></div>
+                            <p className="text-center text-sm mb-[19px]  text-highlighted-textcolor leading-[14px] ml-[12px] font-poppins">Cardio</p>
+                        </div>
+                        <div className="flex">
+                            <div className="bg-backgroundLight rounded-[50%] h-[14px] w-[14px]"></div>
+                            <p className="text-center text-sm text-highlighted-textcolor leading-[14px] ml-[12px] font-poppins">Beweglichkeit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex">
+                <h3 className="text-highlighted-textcolor text-h3 font-poppins font-bold mt-[66px] ml-[24px]">21 Tage</h3>
+                <button className="text-highlighted-textcolor text-sm font-poppins mt-[72px] absolute right-[18px]">Alle anzeigen</button>
+            </div>
+            <div className="h-[110px]"></div>
         </div>
     );
 }
