@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 let WorkoutInformationDays = [['Tag 1', 'Tag 2', 'Tag 3'], ['26 Min.', '26 Min.', '26 Min.'], ['Beweglichkeit', 'Beweglichkeit', 'Beweglichkeit']];
 let WorkoutInformationDaysComponentPackage = [];
 
