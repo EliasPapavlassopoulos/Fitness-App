@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import WorkoutInformationDaysComponentPackage from "../components/WorkoutInfomrationDaysComponent"
 export default function WorkoutInformation() {
     return (
         <div className="workoutInformation">
@@ -53,6 +54,9 @@ export default function WorkoutInformation() {
             <div className="flex">
                 <h3 className="text-highlighted-textcolor text-h3 font-poppins font-bold mt-[66px] ml-[24px]">21 Tage</h3>
                 <button className="text-highlighted-textcolor text-sm font-poppins mt-[72px] absolute right-[18px]">Alle anzeigen</button>
+            </div>
+            <div className="mt-[21px]">
+                <WorkoutInformationDaysComponentPackage />
             </div>
             <div className="h-[110px]"></div>
         </div>
