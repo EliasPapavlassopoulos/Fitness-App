@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Navigation from "./components/Navigation";
 import Browse from "./pages/Browse";
 import Profile from "./pages/Profile";
+import WorkoutInformation from "./pages/Workout-Information";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/browse" element={<Browse />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/workout/information" element={<WorkoutInformation />} />
       </Routes>
       <Navigation />
     </div>
