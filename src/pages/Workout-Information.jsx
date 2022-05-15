@@ -1,10 +1,11 @@
+import CloseButton from "../components/close-button";
 import { NavLink } from "react-router-dom";
 import WorkoutInformationDaysComponentPackage from "../components/WorkoutInfomrationDaysComponent"
 export default function WorkoutInformation() {
     return (
         <div className="workoutInformation">
             <div className="h-[540px] bg-gradient-to-tl from-gradient1-color1 to-gradient1-color2">
-                <NavLink to="/browse"><img src="../images/close-button.svg" className="absolute right-[19px] top-[25px]" /></NavLink>
+            <CloseButton></CloseButton>
                 <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold relative top-[50%] translate-y-[-50%] text-center ml-[33px] mr-[33px]" >Titel des Programms</h1>
                 <div className="flex justify-around w-full items-center absolute top-[483px]">
                     <div>
