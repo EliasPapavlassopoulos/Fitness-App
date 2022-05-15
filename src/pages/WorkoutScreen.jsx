@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import CloseButton from "../components/close-button";
 export default function WorkoutScreen() {
     function WorkoutInfoSlideUp() {
         document.getElementById("WorkoutInfoSlide").style.bottom = "0";
@@ -12,7 +12,7 @@ export default function WorkoutScreen() {
     }
     return (
         <div className="w-[300%] flex">
-            <NavLink to="/workout/information/start"><img src="../images/close-button.svg" className=" z-30 fixed right-[19px] top-[25px]" /></NavLink>
+            <CloseButton></CloseButton>
             <div id="WorkoutInfoSlide" className="duration-[150ms] z-10 h-[560px] w-full rounded-t-xs bg-backgroundLight fixed bottom-[-503px] left-0">
                 <button id="WorkoutInfoSlideButton" className="mt-[15px] h-[28px] w-[28px] bg-background rounded-[50%] absolute right-[14px]">
                     <p className="text-center text-highlighted-textcolor relative left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] text-ft font-poppins font-bold leading-[30px]" onClick={() => WorkoutInfoSlideUp()}>i</p>
