@@ -1,6 +1,6 @@
 import WorkoutComponent from "../components/WorkoutComponent";
 
-function Browse() {
+export default function Browse() {
     return (
         <div className="browse">
             <h2 className="text-highlighted-textcolor text-h2 font-poppins font-bold pt-[55px] pb-[53.5px] bg-background w-full">Browse</h2>
@@ -11,5 +11,3 @@ function Browse() {
         </div>
     );
 }
-
-export default Browse;

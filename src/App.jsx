@@ -9,7 +9,7 @@ import WorkoutInformation from "./pages/Workout-Information";
 import StartWorkoutScreen from "./pages/StartWorkoutScreen";
 import WorkoutScreen from "./pages/WorkoutScreen";
 
-function App() {
+export default function App() {
   return (
     <div className="main">
       <Routes>
@@ -24,4 +24,3 @@ function App() {
     </div>
   );
 }
-export default App;

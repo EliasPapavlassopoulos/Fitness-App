@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 // Home is active on startup
-function Navigation() {
+export default function Navigation() {
     return (
         <nav className="bg-navigation bg-opacity-40 rounded-t-xs flex justify-around w-full h-12 p-3 items-center fixed bottom-0">
             <NavLink to="/">
@@ -15,5 +15,3 @@ function Navigation() {
         </nav>
     );
 }
-
-export default Navigation;
