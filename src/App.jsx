@@ -7,6 +7,7 @@ import Browse from "./pages/Browse";
 import Profile from "./pages/Profile";
 import WorkoutInformation from "./pages/Workout-Information";
 import StartWorkoutScreen from "./pages/StartWorkoutScreen";
+import WorkoutScreen from "./pages/WorkoutScreen";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/workout/information" element={<WorkoutInformation />} />
         <Route path="/workout/information/start" element={<StartWorkoutScreen />} />
+        <Route path="/workout/[id]" element={<WorkoutScreen />} />
       </Routes>
       <Navigation />
     </div>
