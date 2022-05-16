@@ -2,7 +2,6 @@ import { Routes } from "react-router";
 import { Route } from "react-router-dom";
 // import pages
 import Dashboard from "./pages/Dashboard";
-import Navigation from "./components/Navigation";
 import Browse from "./pages/Browse";
 import Profile from "./pages/Profile";
 import WorkoutInformation from "./pages/Workout-Information";
@@ -22,7 +21,6 @@ export default function App() {
         <Route path="/workout/[id]" element={<WorkoutScreen />} />
         <Route path="/workout/done" element={<WorkoutDoneScreen />} />
       </Routes>
-      <Navigation />
     </div>
   );
 }
