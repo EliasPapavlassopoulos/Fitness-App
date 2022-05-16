@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Dashboard() {
+export default function Dashboard() {
     // !PLACEHOLDER! 
     // Gets fetched from backend later
     const userName = "Elias";
@@ -22,4 +22,3 @@ function Dashboard() {
         </div>
     );
 }
-export default Dashboard;
