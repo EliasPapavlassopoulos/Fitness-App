@@ -5,7 +5,7 @@ let WorkoutInformationDaysComponentPackage = [];
 WorkoutInformationDays[0].forEach((title, WorkoutID) => {
     if (WorkoutID % 3 == 0) {
         WorkoutInformationDaysComponentPackage.push(
-            <NavLink to="/workout/information/start">
+            <NavLink to="/workout/information/start" key={WorkoutID}>
                 <button className="w-full">
                     <div className="mb-[16px] h-[100px] ml-[15px] mr-[24px] bg-backgroundLight rounded-xs drop-shadow-button flex">
                         <div className="h-[100px] w-[100px] rounded-l-xs bg-gradient-to-tl from-gradient1-color1 to-gradient1-color2" key={WorkoutID}>
@@ -25,7 +25,7 @@ WorkoutInformationDays[0].forEach((title, WorkoutID) => {
     }
     if (WorkoutID % 3 == 1) {
         WorkoutInformationDaysComponentPackage.push(
-            <NavLink to="/workout/information/start">
+            <NavLink to="/workout/information/start" key={WorkoutID}>
                 <button className="w-full">
                     <div className="mb-[16px] h-[100px] ml-[15px] mr-[24px] bg-backgroundLight rounded-xs drop-shadow-button flex">
                         <div className="h-[100px] w-[100px] rounded-l-xs bg-gradient-to-tl from-gradient2-color1 to-gradient2-color2" key={WorkoutID}>
@@ -45,7 +45,7 @@ WorkoutInformationDays[0].forEach((title, WorkoutID) => {
     }
     if (WorkoutID % 3 == 2) {
         WorkoutInformationDaysComponentPackage.push(
-            <NavLink to="/workout/information/start">
+            <NavLink to="/workout/information/start" key={WorkoutID}>
                 <button className="w-full">
                     <div className="mb-[16px] h-[100px] ml-[15px] mr-[24px] bg-backgroundLight rounded-xs drop-shadow-button flex">
                         <div className="h-[100px] w-[100px] rounded-l-xs bg-gradient-to-tl from-gradient3-color1 to-gradient3-color2 to-gradient3-color3 to-gradient3-color4" key={WorkoutID}>

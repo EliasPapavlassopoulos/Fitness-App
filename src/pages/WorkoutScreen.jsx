@@ -3,6 +3,7 @@ import PageWrapper from "../templates/PageWrapper";
 import { ReactComponent as CloseButton } from "../images/close-button.svg";
 import { useState } from "react";
 import CloseWindowConfirmWindow from "../components/CloseWindowConfirmWindow"
+import WorkoutProgressBarComponent from "../components/WorkoutProgressBarComponent";
 
 export default function WorkoutScreen() {
     //Counter state for active Workout
@@ -14,19 +15,19 @@ export default function WorkoutScreen() {
             }
         }, 1000);
     }
+
     //Close-window state (open/close)
-    const CloseWindowConfirmation = () => {
+    function CloseWindowConfirmation() {
         return (
             <CloseWindowConfirmWindow></CloseWindowConfirmWindow>
         );
-    };
+    }
     const [ConfirmationWindowActive, setConfirmationWindowActive] = useState(true);
     const [ConfirmWindow, setConfirmWindow] = useState([]);
-    const setConfirmationWindowToActive = event => {
+    const setConfirmationWindowToActive = () => {
         setConfirmationWindowActive(ConfirmationWindowActive ? false : true);
-        console.log(ConfirmationWindowActive)
     };
-    const CloseButtonClick = event => {
+    const CloseButtonClick = () => {
         if (ConfirmationWindowActive) setConfirmWindow(<CloseWindowConfirmation />);
         else setConfirmWindow();
     };
@@ -34,31 +35,20 @@ export default function WorkoutScreen() {
         setConfirmationWindowToActive();
         CloseButtonClick();
     }
-    
+
     return (
         <PageWrapper nav={false}>
-            <div className="w-[300%] flex">
+            <div className="w-full flex">
                 {/* close button has no function by now */}
-                <button onClick={openCinfirmationWindow}><CloseButton className="fixed right-[19px] top-[25px]" /></button>
+                <button onClick={openCinfirmationWindow}><CloseButton className = "fixed right-[19px] top-[25px]" /></button>
                 {ConfirmWindow}
                 <div className="duration-[150ms] z-10 h-[560px] w-full rounded-t-xs bg-backgroundLight fixed bottom-[-503px] left-0">
                     <button className="mt-[15px] h-[28px] w-[28px] bg-background rounded-[50%] absolute right-[14px]">
                         <p className="text-center text-highlighted-textcolor relative left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] text-ft font-poppins font-bold leading-[30px]">i</p>
                     </button>
                 </div>
-                <div className="h-[25px] w-[436px] fixed left-[50%] top-[75px] z-30 flex translate-x-[-12.5px]">
-                    <div className="w-[25px] h-[25px] rounded-[50%] drop-shadow-button bg-gradient-to-tl from-gradient1-color1 to-gradient1-color2">
-                    </div>
-                    <hr className="w-[52px] h-0 border-dotted border-backgroundLight border-t-[3px] relative top-[50%] translate-y-[-50%] mr-[6px] ml-[6px]"></hr>
-                    <div className="w-[25px] h-[25px] rounded-[50%] border-backgroundLight border-[3px]"></div>
-                    <hr className="w-[52px] h-0 border-dotted border-backgroundLight border-t-[3px] relative top-[50%] translate-y-[-50%] mr-[6px] ml-[6px]"></hr>
-                    <div className="w-[25px] h-[25px] rounded-[50%] border-backgroundLight border-[3px]"></div>
-                    <hr className="w-[52px] h-0 border-dotted border-backgroundLight border-t-[3px] relative top-[50%] translate-y-[-50%] mr-[6px] ml-[6px]"></hr>
-                    <div className="w-[25px] h-[25px] rounded-[50%] border-backgroundLight border-[3px]"></div>
-                    <hr className="w-[52px] h-0 border-dotted border-backgroundLight border-t-[3px] relative top-[50%] translate-y-[-50%] mr-[6px] ml-[6px]"></hr>
-                    <div className="w-[25px] h-[25px] rounded-[50%] border-backgroundLight border-[3px]"></div>
-                </div>
-                <div className="w-[33.33%] h-[100vh] bg-background">
+                <WorkoutProgressBarComponent />
+                <div className="w-full h-[100vh] bg-background">
                     <div className="relative left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]">
                         <div className="w-[234px] h-[234px] rounded-[50%] bg-backgroundLight drop-shadow-button relative left-[50%] translate-x-[-50%]">
                             <div className="w-[195px] h-[195px] rounded-[50%] bg-background relative left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]"><h1 className=" relative left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] text-center text-highlighted-textcolor text-h1 font-poppins font-bold" onLoad={startWorkoutTimer()}>{workoutCounter} sec</h1></div>
@@ -67,10 +57,6 @@ export default function WorkoutScreen() {
                         </div>
                         <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold text-center relative left-[50%] translate-x-[-50%] mt-[32px]">Plank</h1>
                     </div>
-                </div>
-                <div className="w-[33.33%] h-[100vh] bg-background">
-                </div>
-                <div className="w-[33.33%] h-[100vh] bg-background">
                 </div>
             </div>
         </PageWrapper>
