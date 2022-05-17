@@ -1,7 +1,7 @@
-import CloseButton from "../components/close-button";
+import CloseButton from "../../components/buttons/close-button";
 import { NavLink } from "react-router-dom";
-import PageWrapper from "../templates/PageWrapper";
-import WorkoutInformationDaysComponentPackage from "../components/WorkoutInfomrationDaysComponent"
+import PageWrapper from "../../templates/PageWrapper";
+import WorkoutInformationDaysComponentPackage from "../../components/workouts/WorkoutInfomrationDaysComponent"
 export default function WorkoutInformation() {
     return (
         <PageWrapper nav = {false}>

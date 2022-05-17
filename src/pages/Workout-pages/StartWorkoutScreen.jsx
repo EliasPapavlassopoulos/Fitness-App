@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import PageWrapper from "../templates/PageWrapper";
+import PageWrapper from "../../templates/PageWrapper";
 
 export default function StartWorkoutScreen() {
     return (

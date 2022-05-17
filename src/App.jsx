@@ -4,10 +4,10 @@ import { Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Browse from "./pages/Browse";
 import Profile from "./pages/Profile";
-import WorkoutInformation from "./pages/Workout-Information";
-import StartWorkoutScreen from "./pages/StartWorkoutScreen";
-import WorkoutScreen from "./pages/WorkoutScreen";
-import WorkoutDoneScreen from "./pages/WorkoutDoneScreen";
+import WorkoutInformation from "./pages/workout-pages/Workout-Information";
+import StartWorkoutScreen from "./pages/workout-pages/StartWorkoutScreen";
+import WorkoutScreen from "./pages/workout-pages/WorkoutScreen";
+import WorkoutDoneScreen from "./pages/workout-pages/WorkoutDoneScreen";
 
 export default function App() {
   return (

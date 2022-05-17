@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { ReactComponent as NavigationHomeComponent } from "../images/navigation-home.svg";
-import { ReactComponent as NavigationBrowseComponent } from "../images/navigation-browse.svg";
-import { ReactComponent as NavigationProfileComponent } from "../images/navigation-profile.svg";
+import { ReactComponent as NavigationHomeComponent } from "../images/navigation/navigation-home.svg";
+import { ReactComponent as NavigationBrowseComponent } from "../images/navigation/navigation-browse.svg";
+import { ReactComponent as NavigationProfileComponent } from "../images/navigation/navigation-profile.svg";
 
 export default function Navigation() {
     return (

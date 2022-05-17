@@ -1,4 +1,4 @@
-import WorkoutComponent from "../components/WorkoutComponent";
+import WorkoutComponent from "../components/workouts/WorkoutComponent";
 import PageWrapper from "../templates/PageWrapper";
 
 export default function Browse() {

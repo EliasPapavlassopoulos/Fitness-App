@@ -1,5 +1,5 @@
-import PageWrapper from "../templates/PageWrapper";
-import CloseButton from "../components/close-button";
+import PageWrapper from "../../templates/PageWrapper";
+import CloseButton from "../../components/buttons/close-button";
 export default function WorkoutDoneScreen() {
     return (
         <PageWrapper nav = {false}>
