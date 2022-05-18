@@ -36,9 +36,17 @@ export default function WorkoutScreen() {
         CloseButtonClick();
     }
 
+
+    function runWorkoutAnimation (){
+        setTimeout(() => {
+            
+        }, 30_000);
+    }
+
+
     return (
         <PageWrapper nav={false}>
-            <div className="w-full flex">
+            <div className="w-full flex" onLoad={runWorkoutAnimation}>
                 {/* close button has no function by now */}
                 <button onClick={openCinfirmationWindow}><CloseButton className = "fixed right-[19px] top-[25px]" /></button>
                 {ConfirmWindow}
@@ -58,6 +66,7 @@ export default function WorkoutScreen() {
                         <h1 className="text-highlighted-textcolor text-h1 font-poppins font-bold text-center relative left-[50%] translate-x-[-50%] mt-[32px]">Plank</h1>
                     </div>
                 </div>
+
             </div>
         </PageWrapper>
     );
