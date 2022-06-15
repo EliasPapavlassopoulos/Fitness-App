@@ -28,7 +28,7 @@ export default function WorkoutScreen() {
     }
 
     const closeCinfirmationWindow = () => {
-        setConfirmationWindowActive(false);
+        setConfirmationWindowActive(false); 
     }
     
     return (
