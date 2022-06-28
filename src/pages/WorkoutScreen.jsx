@@ -8,13 +8,11 @@ export default function WorkoutScreen() {
     //Counter state for active Workout
     const [workoutCounter, setWorkoutCounter] = useState(30);
     const startWorkoutTimer = () => {
-    const workoutTimer = setTimeout(() => {
-            if (workoutCounter > 0) {
-                setWorkoutCounter(workoutCounter - 1);
-            }
+        const workoutTimer = setInterval(() => {
+            //setWorkoutCounter(workoutCounter => workoutCounter - 1);
         }, 1000);
-        return function(){
-            clearTimeout(workoutTimer);
+        return function () {
+            clearInterval(workoutTimer);
         }
     }
 
@@ -28,13 +26,13 @@ export default function WorkoutScreen() {
     }
 
     const closeCinfirmationWindow = () => {
-        setConfirmationWindowActive(false); 
+        setConfirmationWindowActive(false);
     }
-    
+
     return (
         <WorkoutWrapper >
             <div className="w-full flex">
-                <button onClick={openCinfirmationWindow}><CloseButton className = "fixed right-[19px] top-[25px]" /></button>
+                <button onClick={openCinfirmationWindow}><CloseButton className="fixed right-[19px] top-[25px]" /></button>
                 {confirmationWindowActive && <CloseWindowConfirmWindow onClose={closeCinfirmationWindow} />}
                 <div className="duration-[150ms] z-10 h-[560px] w-full rounded-t-xs bg-backgroundLight fixed bottom-[-503px] left-0">
                     <button className="mt-[15px] h-[28px] w-[28px] bg-background rounded-[50%] absolute right-[14px]">
