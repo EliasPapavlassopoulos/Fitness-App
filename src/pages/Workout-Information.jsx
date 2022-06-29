@@ -42,10 +42,10 @@ export default function WorkoutInformation() {
                     <div className="rounded-[50%] bg-backgroundLight h-[160px] w-[160px] drop-shadow-button">
                         <PieChart
                             data={[
-                                {title: '1', value: pieChart_1, color: '#292f36'},
-                                {title: '2', value: pieChart_2, color: '#343a40'},
-                                {title: '3', value: pieChart_3, color: '#495057'},
-                                {title: '4', value: pieChart_4, color: '#6c757d'},
+                                {title: 'Krafttraining', value: pieChart_1, color: '#292f36'},
+                                {title: 'Koordination', value: pieChart_2, color: '#343a40'},
+                                {title: 'Cardio', value: pieChart_3, color: '#495057'},
+                                {title: 'Beweglichkeit', value: pieChart_4, color: '#6c757d'},
                             ]}
                         />;
                     </div>
