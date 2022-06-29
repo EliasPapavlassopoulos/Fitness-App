@@ -45,7 +45,7 @@ export default function WorkoutInformation() {
                                 {title: 'Krafttraining', value: pieChart_1, color: '#292f36'},
                                 {title: 'Koordination', value: pieChart_2, color: '#343a40'},
                                 {title: 'Cardio', value: pieChart_3, color: '#495057'},
-                                {title: 'Beweglichkeit', value: pieChart_4, color: '#6c757d'},
+                                {title: 'Beweglichkeit', value: pieChart_4, color: '#6c757d'}, 
                             ]}
                         />;
                     </div>
