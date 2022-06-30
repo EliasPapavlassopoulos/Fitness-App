@@ -1,7 +1,7 @@
 import CloseButton from "../components/close-button";
 import { NavLink } from "react-router-dom";
 import PageWrapper from "../templates/PageWrapper";
-import WorkoutInformationDaysComponentPackage from "../components/WorkoutInfomrationDaysComponent"
+import WorkoutInformationDaysComponentPackage from "../components/workout_information/WorkoutInfomrationDaysComponent";
 import { PieChart } from 'react-minimal-pie-chart';
 
 export default function WorkoutInformation() {
