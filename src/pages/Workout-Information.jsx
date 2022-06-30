@@ -47,7 +47,7 @@ export default function WorkoutInformation() {
                                 {title: 'Cardio', value: pieChart_3, color: '#495057'},
                                 {title: 'Beweglichkeit', value: pieChart_4, color: '#6c757d'}, 
                             ]}
-                        />;
+                        />
                     </div>
                     <div className=" relative w-[150px]">
                         <div className="relative top-[50%] translate-y-[-50%]">
