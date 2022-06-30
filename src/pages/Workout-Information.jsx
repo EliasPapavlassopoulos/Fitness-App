@@ -2,9 +2,15 @@ import CloseButton from "../components/close-button";
 import { NavLink } from "react-router-dom";
 import PageWrapper from "../templates/PageWrapper";
 import WorkoutInformationDaysComponentPackage from "../components/WorkoutInfomrationDaysComponent"
+import { PieChart } from 'react-minimal-pie-chart';
 export default function WorkoutInformation() {
+    //dummydata +4 lines
+    let pieChart_1 = 20;
+    let pieChart_2 = 15;
+    let pieChart_3 = 30;
+    let pieChart_4 = 25;
     return (
-        <PageWrapper nav = {false}>
+        <PageWrapper nav={false}>
             <div className="workoutInformation">
                 <div className="h-[540px] bg-gradient-to-tl from-gradient1-color1 to-gradient1-color2">
                     <CloseButton></CloseButton>
@@ -32,7 +38,16 @@ export default function WorkoutInformation() {
                 </div>
                 <h3 className="text-highlighted-textcolor text-h3 font-poppins font-bold mt-[28px] ml-[24px]">So ist das Programm aufgeteilt:</h3>
                 <div className="ml-[24px] mr-[24px] mt-[37px] flex justify-around">
-                    <div className="rounded-[50%] bg-backgroundLight h-[160px] w-[160px]"></div>
+                    <div className="rounded-[50%] bg-backgroundLight h-[160px] w-[160px] drop-shadow-button">
+                        <PieChart
+                            data={[
+                                { title: '1', value: pieChart_1, color: '#292f36' },
+                                { title: '2', value: pieChart_2, color: '#343a40' },
+                                { title: '3', value: pieChart_3, color: '#495057' },
+                                { title: '4', value: pieChart_4, color: '#6c757d' },
+                            ]}
+                        />;
+                    </div>
                     <div className=" relative w-[150px]">
                         <div className="relative top-[50%] translate-y-[-50%]">
                             <div className="flex">
